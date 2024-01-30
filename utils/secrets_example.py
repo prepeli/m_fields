@@ -1,2 +1,3 @@
 username = 'INSERT_USER_NAME_HERE'
 password = 'INSERT_PASSWORD_HERE'
+homepage = 'INSERT_PAGE_URL_HERE'

@@ -1,17 +1,13 @@
 from playwright.async_api import async_playwright
 import utils.secrets as secrets
 
-### debugging mode
-import os
-os.environ['PWDEBUG'] = '1'
-
 async def main():
     async with async_playwright() as p:
         browser = await p.firefox.launch(headless=False)
         page = await browser.new_page()
 
         # Navigate to the page
-        await page.goto("https://app.mightyfields.com/")
+        await page.goto(secrets.homepage)
 
         # Fill-in login credentials
         await page.fill('input[placeholder="Email"]', secrets.username)
