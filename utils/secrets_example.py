@@ -1,0 +1,2 @@
+username = 'INSERT_USER_NAME_HERE'
+password = 'INSERT_PASSWORD_HERE'
